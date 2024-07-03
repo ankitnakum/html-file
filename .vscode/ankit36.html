@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key frems and Animation</title>
+    <style>
+        body{
+            background-color: #f1ffc4;
+        }
+   .container{
+    background-color: #4bfa4b;
+    border: 2px solid #151615;
+   }
+   .box{
+    width: 200px;
+    height: 100px;
+    background-color: #13fbfb;
+    border:2px solid #141414;
+    position: relative;
+    /* animation-name: ankit; */
+    animation-name: ankit2;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    /* animation-fill-mode:alternate;
+    animation-timing-function: ease-in-out; */
+   }
+   @keyframes ankit2 {
+    0%
+    {
+   top: 0px;
+   left:0px
+    }
+    25%
+    {
+        top: 250px;
+        left:0px
+    }
+    75%
+    {
+        top: 250px;
+        left:250px
+    }
+  100%{
+    top: 0px;
+    left:250px
+        }
+    }
+    
+   
+   @keyframes ankit {
+    form{
+   width: 200px;
+    }
+    to
+    {
+ width: 400px;
+    }
+    
+   }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is box.
+        </div>
+    </div>
+</body>
+</html>
